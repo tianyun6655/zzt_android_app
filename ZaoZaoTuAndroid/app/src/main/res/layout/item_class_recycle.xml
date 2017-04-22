@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    >
+
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+ >
+
+    <RelativeLayout
+        android:layout_height="150dp"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        >
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/class2"
+        android:scaleType="centerCrop"
+        />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            >
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="课程10"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            />
+            <TextView
+                android:id="@+id/tv_school"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="上海市萌萌早教中心"
+                android:textColor="#fff"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"                />
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="课程介绍课程介绍课程介绍课程介绍课程"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+</RelativeLayout>
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:src="@drawable/location"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          />
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="3.6km"
+            android:layout_gravity="center"
+            android:textColor="#8b8b8b"
+            android:textSize="15sp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="10"
+            android:layout_gravity="center"
+            android:textColor="#8b8b8b"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
+</android.support.v7.widget.CardView>
+    </RelativeLayout>

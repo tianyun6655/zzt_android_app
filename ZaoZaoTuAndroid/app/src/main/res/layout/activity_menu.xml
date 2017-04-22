@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/linearLayout"
+        android:background="#8b8b8b"
+        />
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/linearLayout"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="10dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/home_layout_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/home_image_view"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/comui_tab_home"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_image_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="主页"
+                android:textColor="#8b8b8b"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pond_layout_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/fish_image_view"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/comui_tab_home"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fish_image_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="发现"
+                android:textColor="#8b8b8b"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/message_layout_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/message_image_view"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/comui_tab_home"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_image_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="早早文"
+                android:textColor="#8b8b8b"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mine_layout_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/mine_image_view"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/comui_tab_home"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mine_image_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:text="小兔子"
+                android:textColor="#8b8b8b"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

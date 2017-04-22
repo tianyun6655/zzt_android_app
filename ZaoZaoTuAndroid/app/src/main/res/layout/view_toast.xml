@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f45f63"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+<ImageView
+    android:layout_height="30dp"
+    android:layout_width="30dp"
+    android:src="@drawable/error"
+    android:layout_gravity="center"
+    />
+  <LinearLayout
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:orientation="vertical"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="5dp"
+      android:layout_marginBottom="10dp"
+      android:layout_marginRight="10dp"
+      >
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登陆失败"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        />
+      <TextView
+          android:id="@+id/content"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="手机或者密码出错"
+          android:layout_marginTop="3dp"
+          android:textSize="12sp"
+          android:textColor="#fff"
+          />
+      </LinearLayout>
+</LinearLayout>
